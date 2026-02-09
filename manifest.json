@@ -3,7 +3,16 @@
   "name": "Tab Stash",
   "version": "1.0",
   "description": "Serialize browser state to Markdown and free memory.",
-  "permissions": ["tabs", "clipboardWrite"],
+  "permissions": [
+    "tabs",
+    "clipboardWrite"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tab-stash@sumitnautiyal.com",
+      "strict_min_version": "109.0"
+    }
+  },
   "icons": {
     "48": "icons/icon.png",
     "96": "icons/icon.png"

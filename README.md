@@ -53,3 +53,6 @@ This tool is part of a series on digital minimalism and high-performance enginee
 ## License
 
 MIT
+
+---
+*Built by [Sumit Nautiyal](https://thecsjourney.com)*
