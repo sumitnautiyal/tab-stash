@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Stash",
+  "version": "1.0",
+  "description": "Serialize browser state to Markdown and free memory.",
+  "permissions": ["tabs", "clipboardWrite"],
+  "icons": {
+    "48": "icons/icon.png",
+    "96": "icons/icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon.png"
+  }
+}
