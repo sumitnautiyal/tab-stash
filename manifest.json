@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Tab Stash",
-  "version": "1.6",
+  "version": "1.8",
   "description": "Serialize browser state to Markdown and free memory.",
   "permissions": [
     "tabs",
@@ -10,17 +10,16 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "tab-stash@thecsjourney.com",
-      "strict_min_version": "109.0",
+      "strict_min_version": "142.0",
       "data_collection_permissions": {
         "interaction_data": false,
-        "technical_data": false
+        "technical_data": false,
+        "required": []
       }
     }
   },
   "icons": {
-    "32": "icons/icon.png",
-    "48": "icons/icon.png",
-    "96": "icons/icon.png"
+    "32": "icons/icon.png"
   },
   "action": {
     "default_popup": "popup.html",
