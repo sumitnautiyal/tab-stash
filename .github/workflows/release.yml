@@ -1,0 +1,29 @@
+name: Release Tab Stash
+
+on:
+  push:
+    tags:
+      - 'v*' # Triggers when you push a tag like v1.0
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create Extension Artifact (.zip)
+        run: |
+          # Zip the specific files and the icons folder
+          zip -r tab-stash.zip manifest.json popup.html popup.js icons/ README.md LICENSE
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: tab-stash.zip
+          generate_release_notes: true
+          draft: false
+          prerelease: false
